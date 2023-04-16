@@ -20,6 +20,8 @@ class CustomGridView (val activity: Activity, val list:List<OutData>): ArrayAdap
         val txtPhim = rowView.findViewById<TextView>(R.id.txtTenPhim)
 
         images.setImageResource(list[position].images)
+
+        val string:String = "aaaaaaaaaaaaaaaaaaa"
         txtPhim.text = list[position].tenPhim
         return rowView
     }
